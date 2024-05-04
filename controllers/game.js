@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { getRandomGame } = require("../appModules/api");
+const { getRandomgame } = require("../appModules/api");
 
 async function gameRouteController(res) {
     fs.readFile("./dataset/rating.json", (err, ratingFile) => {
@@ -8,7 +8,7 @@ async function gameRouteController(res) {
         res.end("Internal Server Error");
       }
       const data = JSON.parse(ratingFile);
-      const game = getRandomGame(data);
+      const game = getRandomgame(data);
       res.setHeader("Content-Type", "application/json");
       res.end(JSON.stringify(game));
     });

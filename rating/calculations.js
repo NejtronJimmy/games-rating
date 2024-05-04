@@ -8,3 +8,5 @@ function createRating (obj, weight) {
         array[index].rating += rating;
         return array;
       }
+
+      module.exports = { createRating, updateRating };

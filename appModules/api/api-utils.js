@@ -7,7 +7,7 @@ async function getData(url) {
     }
     }
     function getRandomgame(array){
-        const randomIndex = math.floor(math.random() * array.length);
+        const randomIndex = Math.floor(Math.random() * array.length);
         return array[randomIndex]
     }
     module.exports = { getData, getRandomgame};

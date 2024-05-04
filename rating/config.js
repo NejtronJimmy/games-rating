@@ -5,4 +5,4 @@ const WEIGHT = {
     design: 1,
     idea: 3,
 }
-module.exports = {PATH_TO_RATING_FILE};
+module.exports = { PATH_TO_RATING_FILE, WEIGHT };

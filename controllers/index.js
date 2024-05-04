@@ -1,6 +1,9 @@
-const mainRouteController = require("./controllers/main");
-const defaultRouteController = require("./controllers/default");
-const gameRouteController = require("./controllers/game");
+const mainRouteController = require("./main");
+const gameRouteController = require("./game");
+const voteRouteController = require("./vote");
+const defaultRouteController = require("./default");
+
+
 
 module.exports = {
 mainRouteController,
